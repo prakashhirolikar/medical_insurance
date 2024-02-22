@@ -18,7 +18,7 @@ def home():
 def gender_options():
     return jsonify(list(dataset['gender'].unique()))
 
-@app.route('/api/children_options')
+@app.route('/api/filtered_children_options')
 def children_options():
     children_column = dataset['children']
     
